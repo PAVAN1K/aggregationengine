@@ -2,11 +2,11 @@ version: 0.2
 
 phases:
   build:
-    command:
+    commands:
       - echo Entered the build phase ...
       - mvn clean package
   post_build:
-    command:
+    commands:
       - echo Build Completed Successfully
 
 artifacts:

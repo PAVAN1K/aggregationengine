@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    command:
+      - echo Entered the build phase ...
+      - mvn clean package
+  post_build:
+    command:
+      - echo Build Completed Successfully
+
+artifacts:
+  files:
+    - target/AggregationEngine-1.0-SNAPSHOT.jar
+  discard-paths: yes
